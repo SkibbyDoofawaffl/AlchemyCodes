@@ -1,0 +1,29 @@
+settings:
+  require-code-permission: false
+  admin-permission: alchemycodes.admin
+  allow-console-redeem-checks: true
+
+webhook:
+  enabled: false
+  url: ''
+  username: 'AlchemyCodes'
+  avatar-url: ''
+  footer-text: 'AlchemyCodes Logger'
+  footer-icon-url: ''
+  mask-ip: true
+  types:
+    redeem-success: true
+    failed-attempts: true
+    expired-attempts: true
+    admin-actions: true
+    system-errors: true
+
+codes:
+  WELCOME:
+    uses: 100
+    permission: ''
+    expiration: ''
+    commands:
+      - 'give %player% diamond 1'
+      - 'eco give %player% 500'
+    redeemed-count: 0

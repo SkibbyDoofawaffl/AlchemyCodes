@@ -1,0 +1,20 @@
+name: AlchemyCodes
+main: com.alchemycodes.AlchemyCodesPlugin
+version: 1.3.0
+api-version: '1.21'
+author: OpenAI
+website: https://chat.openai.com
+description: Redeem code plugin with player/IP redemption protection, editable rewards, random code generation, new-player-only codes, key validation, durations, and Discord webhook logging.
+commands:
+  redeem:
+    description: Redeem a code
+    aliases: [gift, coupon, prize, promo]
+    usage: /redeem <code>
+  alchemycodes:
+    description: Main AlchemyCodes command
+    aliases: [acodes, alcodes]
+    usage: /alchemycodes <subcommand>
+permissions:
+  alchemycodes.admin:
+    description: Full access to AlchemyCodes admin commands
+    default: op
